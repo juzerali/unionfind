@@ -1,6 +1,6 @@
 {
   "name": "unionfind",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementation of Weighted Quick Union-Find with Path Compression data structure.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "\"\""
+    "url": "git@github.com:juzerali/unionfind.git"
   },
   "keywords": [
     "union-find",
@@ -16,7 +16,8 @@
     "grouping"
   ],
   "devDependencies": {
-    "chai": "*"
+    "chai": "*",
+    "mocha": "*"
   },
   "author": "Juzer Ali",
   "license": "MIT"
