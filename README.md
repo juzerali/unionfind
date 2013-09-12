@@ -42,4 +42,4 @@ uf.count();
 ```
 Returns the number of distinct groups left inside the object.
 
-Licenct MIT
+# Licence MIT
