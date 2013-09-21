@@ -1,4 +1,4 @@
-Union Find
+Union Find [![NPM version](https://badge.fury.io/js/unionfind.png)](http://badge.fury.io/js/unionfind) 
 ==========
 
 A quick union find data structure for javascript
