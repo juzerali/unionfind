@@ -45,7 +45,6 @@ describe("API", function() {
 	it("should find the root of the tree in which the given element lives, .find(num)", function(){
 		uf.find(1).should.equal(1);
 		uf.find(2).should.equal(1);
-		debugger
 		uf.find(3).should.equal(3)
 		uf.find(4).should.equal(3)
 		uf.find(0).should.equal(3)
