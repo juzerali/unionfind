@@ -1,5 +1,5 @@
-var UnionFind = require('../index.js')
-,	chai = require('chai')
+var UnionFind = require("../index.js")
+,	chai = require("chai")
 ,	should = chai.should();
 
 
@@ -45,15 +45,15 @@ describe("API", function() {
 	it("should find the root of the tree in which the given element lives, .find(num)", function(){
 		uf.find(1).should.equal(1);
 		uf.find(2).should.equal(1);
-		uf.find(3).should.equal(3)
-		uf.find(4).should.equal(3)
-		uf.find(0).should.equal(3)
+		uf.find(3).should.equal(3);
+		uf.find(4).should.equal(3);
+		uf.find(0).should.equal(3);
 	})
 
 	describe("weighted", function(){
 		it("should always change the id of smaller tree and preserve the id of larger one", function(){
 			//We have two sets now s1 = {1,2} and s2 = {3,4,0}
-			uf.union(2,3)
+			uf.union(2,3);
 
 			uf.count().should.equal(1);
 			uf.find(0).should.equal(3);
@@ -84,7 +84,7 @@ describe("key", function(){
 		 * UnionFind. This key will allow us to treat the data structure
 		 * as key starting from 1 rather than 0
 		 */
-		var key = function(a){return a-1;}
+		var key = function(a){return a-1;};
 		var uf = new UnionFind(5, key);
 
 		uf.size().should.equal(5);
