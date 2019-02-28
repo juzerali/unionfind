@@ -21,11 +21,11 @@ function UnionFind(n, key){
 
 	this.size = function(){
 		return length;
-	}
+	};
 
 	this.count = function(){
 		return cnt;
-	}
+	};
 
 	this.find = function (p) {
 		p = key(p);
@@ -35,14 +35,14 @@ function UnionFind(n, key){
 		}
 
 		return p;
-	}
+	};
 
 	this.connected = function(p, q){
 		p = key(p);
 		q = key(q);
-		ensureIndexWithinBounds(p, q)
-		return this.find(p) === this.find(q)
-	}
+		ensureIndexWithinBounds(p, q);
+		return this.find(p) === this.find(q);
+	};
 
 	this.union = function(p, q){
 		p = key(p);
@@ -58,7 +58,7 @@ function UnionFind(n, key){
 
 		cnt--;
 		return;
-	}
+	};
 
 	function ensureIndexWithinBounds(args){
 		for (var i = arguments.length - 1; i >= 0; i--) {
